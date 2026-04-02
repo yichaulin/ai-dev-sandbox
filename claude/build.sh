@@ -1,1 +1,0 @@
-docker build -t yichaulin/claude-cli-dev-sandbox .

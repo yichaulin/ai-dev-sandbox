@@ -1,0 +1,18 @@
+{
+    "permissions": {
+      "allow": [
+        "Bash(go *)",
+        "Bash(ls *)",
+        "Bash(cat *)",
+        "Bash(grep *)",
+        "Read(**)"
+      ],
+      "deny": [
+        "Bash(git *)",
+        "Bash(rm *)"
+      ]
+    },
+    "alwaysThinkingEnabled": false,
+    "theme": "dark",
+    "migrationVersion": 11
+}

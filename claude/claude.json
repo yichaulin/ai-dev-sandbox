@@ -1,0 +1,17 @@
+{
+    "migrationVersion": 11,
+    "hasCompletedOnboarding": true,
+    "projects": {
+      "/app": {
+        "allowedTools": [],
+        "mcpContextUris": [],
+        "mcpServers": {},
+        "enabledMcpjsonServers": [],
+        "disabledMcpjsonServers": [],
+        "hasTrustDialogAccepted": true,
+        "projectOnboardingSeenCount": 1,
+        "hasClaudeMdExternalIncludesApproved": false,
+        "hasClaudeMdExternalIncludesWarningShown": false
+      }
+    }
+  }
