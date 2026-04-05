@@ -16,7 +16,8 @@ ENV CLAUDE_CONFIG_DIR=/root/.claude
 
 WORKDIR /app
 
-ADD ./settings.local.json /app/.claude/settings.local.json
-ADD ./claude.json /root/.claude/.claude.json
+COPY ./settings.local.json /app/.claude/settings.local.json
+COPY ./claude.json /root/.claude/.claude.json
+COPY CLAUDE.md /root/.claude/CLAUDE.md
 
 CMD ["claude"]

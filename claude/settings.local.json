@@ -1,15 +1,24 @@
 {
     "permissions": {
+      "defaultMode": "acceptEdits",
       "allow": [
         "Bash(go *)",
+        "Bash(gofmt *)",
         "Bash(ls *)",
         "Bash(cat *)",
         "Bash(grep *)",
-        "Read(**)"
+        "Bash(find *)",
+        "Bash(sed *)",
+        "Read(**)",
+        "Read(/tmp/**)"
+      ],
+      "ask": [
+        "Bash(rm *)",
+        "Bash(mv *)"
       ],
       "deny": [
-        "Bash(git *)",
-        "Bash(rm *)"
+        "Bash(git push *)",
+        "Bash(git reset --hard *)"
       ]
     },
     "alwaysThinkingEnabled": false,
