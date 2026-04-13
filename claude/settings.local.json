@@ -1,20 +1,11 @@
 {
+    "defaultMode": "acceptEdits",
     "permissions": {
-      "defaultMode": "acceptEdits",
       "allow": [
-        "Bash(go *)",
-        "Bash(gofmt *)",
-        "Bash(ls *)",
-        "Bash(cat *)",
-        "Bash(grep *)",
-        "Bash(find *)",
-        "Bash(sed *)",
-        "Bash(python3 *)",
-        "Bash(wc *)",
-        "Bash(for *)",
-        "Bash(xargs *)",
+        "Bash(*)",
         "Read(**)",
-        "Read(//tmp/**)"
+        "Write(**)",
+        "Write(//tmp/**)"
       ],
       "ask": [
         "Bash(rm *)",
