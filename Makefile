@@ -20,7 +20,7 @@ docker_codex: ## build codex
 
 alias_claude: ## add cc alias to run claude
 	@if ! grep -q "alias cc=" ~/.zshrc; then \
-		echo "alias cc='docker run --rm -it -v \$$(pwd):/app -v /app/.claude -v ~/.claude/settings.json:/root/.claude/settings.json -e GOPROXY="https://nexus.skyunion.net/repository/go-group,https://proxy.golang.org,direct" -e GONOSUMDB="git.skyunion.net/*" $(CLAUDE_NAME):$(TAG)'" >> ~/.zshrc; \
+		echo "alias cc='docker run --rm -it -v \$$(pwd):/app -v \$$(pwd)/.git:/app/.git:ro -v /app/.claude  -v ~/.claude/settings.json:/root/.claude/settings.json -e GOPROXY=\"https://nexus.skyunion.net/repository/go-group,https://proxy.golang.org,direct\" -e GONOSUMDB=\"git.skyunion.net/*\" $(CLAUDE_NAME):$(TAG)'" >> ~/.zshrc; \
 		echo "✅ 已成功加入 alias"; \
 	else \
 		echo "⚠️  alias cc 已經存在，跳過處理"; \
