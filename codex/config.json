@@ -8,7 +8,7 @@
         "max_tokens": 4096
     },
     "features": {
-        "auto_execute": false,
+        "auto_execute": true,
         "git_integration": true,
         "syntax_highlighting": true,
         "telemetry": false
