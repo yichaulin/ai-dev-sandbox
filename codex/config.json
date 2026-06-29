@@ -1,0 +1,21 @@
+{
+    "api": {
+        "auth_method": "browser"
+    },
+    "model": {
+        "default_model": "gpt-4o",
+        "temperature": 0.2,
+        "max_tokens": 4096
+    },
+    "features": {
+        "auto_execute": false,
+        "git_integration": true,
+        "syntax_highlighting": true,
+        "telemetry": false
+    },
+    "ui": {
+        "theme": "dark",
+        "editor": "vim",
+        "fzf_options": "--height 40% --layout=reverse --border"
+    }
+}
