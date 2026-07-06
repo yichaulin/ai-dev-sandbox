@@ -28,7 +28,7 @@ alias_claude: ## add cc alias to run claude
 
 alias_codex: ## add cx alias to run codex
 	@if ! grep -q "alias cx=" ~/.zshrc; then \
-		echo "alias cx='docker run --rm -it --cap-drop ALL --security-opt no-new-privileges --read-only -v "\$$(pwd):/app:rw" -v "\$$(pwd)/.git:/app/.git:ro" -v ~/.codex:/root/.codex -v /root/.codex/packages -e GOPROXY=\"https://nexus.skyunion.net/repository/go-group,https://proxy.golang.org,direct\" -e GONOSUMDB=\"git.skyunion.net/*\" $(CODEX_NAME):$(TAG)'" >> ~/.zshrc; \
+		echo "alias cx='docker run --rm -it --cap-drop ALL --security-opt no-new-privileges --read-only -v /app/AGENTS.md -v \$$(pwd):/app:rw -v \$$(pwd)/.git:/app/.git:ro -v ~/.codex:/root/.codex -v /root/.codex/packages  -e GOPROXY=\"https://nexus.skyunion.net/repository/go-group,https://proxy.golang.org,direct\" -e GONOSUMDB=\"git.skyunion.net/*\" $(CODEX_NAME):$(TAG)'" >> ~/.zshrc; \
 		echo "✅ 已成功加入 alias"; \
 	else \
 		echo "⚠️  alias cx 已經存在，跳過處理"; \
