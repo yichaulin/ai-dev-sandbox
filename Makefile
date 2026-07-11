@@ -13,10 +13,10 @@ help: ## help
 	@grep -E '^[a-zA-Z_-]+:.*?## .*$$' $(MAKEFILE_LIST) | awk 'BEGIN {FS = ":.*?## "}; {printf "  \033[36m%-10s\033[0m %s\n", $$1, $$2}'
 
 docker_claude: ## build claude
-	cd claude && docker build -t $(CLAUDE_NAME):$(TAG) .
+	cd claude && docker build --no-cache -t $(CLAUDE_NAME):$(TAG) .
 
 docker_codex: ## build codex
-	cd codex && docker build -t $(CODEX_NAME):$(TAG) .
+	cd codex && docker build --no-cache -t $(CODEX_NAME):$(TAG) .
 
 alias_claude: ## add cc alias to run claude
 	@if ! grep -q "alias cc=" ~/.zshrc; then \
