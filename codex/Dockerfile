@@ -15,4 +15,4 @@ WORKDIR /app
 
 COPY ./config.json /root/.codex/config.json
 
-CMD ["codex", "--no-daemon", "--sandbox", "danger-full-access"]
+CMD ["codex", "--no-daemon", "--sandbox", "danger-full-access",  "-c", "allow_login_shell=false"]
