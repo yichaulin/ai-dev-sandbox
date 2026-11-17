@@ -10,9 +10,11 @@
 
 ## 工作習慣 / Work Style
 - (IMPORTANT!) 做任何事情前先將計劃寫成 md 檔給我看，等我確定後再逐步動手。
+- (IMPORTANT!) 永遠不要執行 build 或 test。除非我直接要求。
 - 維持每個步驟都是『改動小範圍，不要一次改太多』的原則
 - 遇到不確定的地方直接說，不要猜測後硬做
 - 當我要求你利用寫 md 檔案跟我互動時，不用一次完整的內容。可以來來回回多修正幾次。不要卡住太久
+- 當我要求你 code review 時，直接 review 當前 branch。不要使用背景 skill 直接 review。不要 build, test
 
 ## 溝通 / Communication
 - 可以直接指出我的想法有問題
